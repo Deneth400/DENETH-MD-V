@@ -20,7 +20,7 @@ FOOTER: process.env.FOOTER=== undefined ? 'ᴅᴇɴᴇᴛʜ-ᴍᴅ': process.env
 MAX_SIZE: process.env.MAX_SIZE === undefined ? '1500': process.env.MAX_SIZE,
 LOGO: process.env.LOGO === undefined ? `https://github.com/denethhansaka/DENETH-MD-Files/blob/main/Images/DENETH-MD.jpg?raw=true` : process.env.LOGO,
 ANTI_DELETE : process.env.ANTI_DELETE === undefined ? 'true' : process.env.ANTI_DELETE,
-AUTO_VOICE: process.env.AUTO_VOICE || "false",
+AUTO_VOICE: process.env.AUTO_VOICE || "true",
 AUTO_STICKER: process.env.AUTO_STICKER || "false",
 AUTO_REPLY: process.env.AUTO_REPLY || "true",
 DELETEMSGSENDTO : process.env.DELETEMSGSENDTO === undefined ? '94761864425' : process.env.DELETEMSGSENDTO
