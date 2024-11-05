@@ -8,7 +8,7 @@ cmd({
   on: "body"
 },    
 async (conn, mek, m, { from, body, isOwner }) => {
-    const filePath = path.join(__dirname, '../plugins/Media/autovoice.json');
+    const filePath = path.join(__dirname, '../media/autovoice.json');
     const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
     for (const text in data) {
         if (body.toLowerCase() === text.toLowerCase()) {
@@ -26,7 +26,7 @@ cmd({
   on: "body"
 },    
 async (conn, mek, m, { from, body, isOwner }) => {
-    const filePath = path.join(__dirname, '../plugins/Media/autosticker.json');
+    const filePath = path.join(__dirname, '../media/autosticker.json');
     const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
     for (const text in data) {
         if (body.toLowerCase() === text.toLowerCase()) {          
@@ -44,7 +44,7 @@ cmd({
   on: "body"
 },    
 async (conn, mek, m, { from, body, isOwner }) => {
-    const filePath = path.join(__dirname, '../plugins/Media/auto_reply.json');
+    const filePath = path.join(__dirname, '../media/auto_reply.json');
     const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
     for (const text in data) {
         if (body.toLowerCase() === text.toLowerCase()) {
